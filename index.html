@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+      
+<head>
+      <meta charset="UTF-8">
+      
+       <meta http-equiv ="X-UA-Compatible"content =" IE=edge">
+      
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        
+       <link rel="stylesheet" href="styles.css">
+       
+       <script src="./scripts.js"></script>
+       
+        <title>Projeto Instagram</title>
+      
+</head>
+
+<body>
+      
+      <div class="container-imagens">
+      <img src="./celular.png" class="img-celular">
+      <img src="./insta1.jpg" class="imagem-celular">
+       <img src="./insta2.jpg" class="imagem-celular" id="troca-imagem">
+      </div>
+      
+ <div class="container-itens">
+       
+          <div class="container-form">
+             
+           <img src="./insta-logo.png" class="insta-logo">
+      
+          <input placeholder="Telefone, nome do usuário ou e-mail">
+      
+          <input placeholder="senha">
+      
+           <button>Entrar</button>
+      
+           <a href="#" class="login-facebook">Entra com o Facebook</a>
+      
+      <p class="ou">OU</p>
+      
+           <a href="#" class="esqueceu-senha">Esqueceu a Senha?</a>
+           </div>
+      
+      
+      <div class="container-cadastro">
+           <p class="paragrafo-conta">Não tem uma Conta?</p><a href="#" class="link-cadastro">Cadastrar-se</a>
+      </div>
+      
+      
+      <p class="paragrafo-app">Obtenha o aplicativo </p>
+      
+      <div class="container-app">
+           <img src="./google-play.png" class="logo-app">
+           <img src="./ios.png" class="logo-app">
+        
+      </div>
+      
+      
+ </div>
+      
+</body>
+<script>
+      
+  let imagem = document.getElementById("troca-imagem")
+    
+    
+   function trocaImagem() {
+   
+   if (imagem.style.opacity == 0) {
+         imagem.style.opacity = 1
+     }
+   else {
+         imagem.style.opacity = 0
+   }
+   
+ }  
+    
+    setInterval(function () {
+          trocaImagem()
+    }, 4000);
+    
+</script>
+
+</html>
